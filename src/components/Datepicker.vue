@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <!-- <div class="wrapper">
       <ejs-daterangepicker
         :startDate="startVal"
@@ -7,9 +7,6 @@
         :placeholder="waterMark"
       ></ejs-daterangepicker>
     </div> -->
-
-    <!-- Price Range Slider  -->
-    <input-slider></input-slider>
   </div>
 </template>
 
@@ -17,28 +14,19 @@
 
 <script>
 export default {
-  // data() {
-  //   return {
-  //     startVal: new Date(),
-  //     endVal: new Date(),
-  //     waterMark: "Select a Range",
-  //   };
-  // },
+  //   data() {
+  //     return {
+  //       startVal: new Date(),
+  //       endVal: new Date(),
+  //       waterMark: "Select a Range",
+  //     };
+  //   },
 };
 </script>
 
 
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
 /* @import "../node_modules/@syncfusion/ej2-base/styles/material.css";
 @import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
 @import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
