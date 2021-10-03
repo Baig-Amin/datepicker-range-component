@@ -1,30 +1,19 @@
 <template>
   <div id="app">
-    <!-- <div class="wrapper">
-      <ejs-daterangepicker
-        :startDate="startVal"
-        :endDate="endVal"
-        :placeholder="waterMark"
-      ></ejs-daterangepicker>
-    </div> -->
+    <!-- Datepicker start -->
+    <input-datepicker></input-datepicker>
+    <!-- Datepicker end -->
 
-    <!-- Price Range Slider  -->
+    <!-- Price Range Slider start -->
     <input-slider></input-slider>
+    <!-- Price Range Slider end -->
   </div>
 </template>
 
 
 
 <script>
-export default {
-  // data() {
-  //   return {
-  //     startVal: new Date(),
-  //     endVal: new Date(),
-  //     waterMark: "Select a Range",
-  //   };
-  // },
-};
+export default {};
 </script>
 
 
@@ -38,15 +27,4 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-
-/* @import "../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-popups/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-lists/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-vue-calendars/styles/material.css";
-.wrapper {
-  max-width: 300px;
-  margin: 0 auto;
-} */
 </style>
