@@ -4,6 +4,8 @@ import App from './App.vue'
 import Slider from './components/Slider.vue'
 // DateRangePicker import
 import Datepicker from './components/Datepicker.vue'
+// Dashboard import
+import Dashboard from './components/Dashboard.vue';
 
 // Bootstrap import
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
@@ -20,7 +22,7 @@ import "../node_modules/@syncfusion/ej2-popups/styles/material.css";
 import "../node_modules/@syncfusion/ej2-lists/styles/material.css";
 import "../node_modules/@syncfusion/ej2-vue-calendars/styles/material.css";
 
-
+Vue.component('input-dashboard', Dashboard)
 // Slider registr globally
 Vue.component('input-slider', Slider)
 // DateRangePicker register globally
