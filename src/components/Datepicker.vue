@@ -1,43 +1,38 @@
 <template>
   <div>
-    <!-- <div class="wrapper">
+    <div id="wrapper">
       <ejs-daterangepicker
-        :startDate="startVal"
-        :endDate="endVal"
-        :placeholder="waterMark"
+        id="daterangepicker"
+        :placeholder="waterMarkText"
+        :min="minDate"
+        :max="maxDate"
       ></ejs-daterangepicker>
-    </div> -->
-
-    <div class="wrapper">
-      <input
-        type="Date"
-        class="form-control"
-        v-model="startVal"
-        :endDate="endVal"
-        placeholder="dd/mm/yyyy"
-      />
     </div>
   </div>
 </template>
 
 
-
 <script>
-export default {
-  data() {
+import Vue from "vue";
+import { DateRangePickerPlugin } from "@syncfusion/ej2-vue-calendars";
+Vue.use(DateRangePickerPlugin);
+
+export default Vue.extend({
+  data: function () {
     return {
-      startVal: new Date(),
-      endVal: new Date(),
+      waterMarkText: "Select a Range",
+      minDate: new Date("10/01/2021"),
+      maxDate: new Date("10/01/2022"),
     };
   },
-};
+});
 </script>
 
 
-
 <style>
-.wrapper {
-  max-width: 300px;
-  margin: 0 auto;
+#wrapper {
+  max-width: 246px;
+  margin: 30px auto;
+  padding-top: 15px;
 }
 </style>

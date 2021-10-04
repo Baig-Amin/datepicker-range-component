@@ -1,21 +1,16 @@
 <template>
   <div id="app">
-    <!-- Datepicker start -->
+    <!-- Datepicker -->
     <input-datepicker></input-datepicker>
-    <!-- Datepicker end -->
-
-    <!-- Price Range Slider start -->
+    <!-- Price Range Slider -->
     <input-slider></input-slider>
-    <!-- Price Range Slider end -->
   </div>
 </template>
-
 
 
 <script>
 export default {};
 </script>
-
 
 
 <style>
