@@ -4,10 +4,21 @@
     <input-datepicker></input-datepicker>
     <!-- Price Range Slider -->
     <input-slider></input-slider>
-    <div class="">
-      <input-dashboard></input-dashboard>
-      <input-dashboard></input-dashboard>
-    </div>
+    <input-dashboard
+      mainInfo="Used Space"
+      mainTitle="49/50 GB"
+      mainFooter="Get More Space..."
+    ></input-dashboard>
+    <input-dashboard
+      mainInfo="Revenue"
+      mainTitle="$34,245"
+      mainFooter="Last 24 Hours"
+    ></input-dashboard>
+    <input-dashboard
+      mainInfo="Fixed Issues"
+      mainTitle="75"
+      mainFooter="Tracked from Github"
+    ></input-dashboard>
   </div>
 </template>
 

@@ -12,12 +12,14 @@
                 >
                   <i class="material-icons"></i>
                 </div>
-                <p class="card-category text-center">Used Space</p>
-                <h4 class="card-title text-center">49/50<span> GB</span></h4>
+                <p class="card-category text-center">
+                  {{ mainInfo }}
+                </p>
+                <h4 class="card-title text-center">{{ mainTitle }}</h4>
               </div>
               <div class="card-footer">
                 <div class="stats">
-                  <a href="">Get More Space...</a>
+                  <a href="">{{ mainFooter }}</a>
                 </div>
               </div>
             </div>
@@ -30,7 +32,7 @@
 
 <script>
 export default {
-  setup() {},
+  props: ["mainInfo", "mainTitle", "mainFooter"],
 };
 </script>
 
@@ -84,12 +86,7 @@ export default {
     0 7px 10px -5px rgb(255 152 0 / 40%);
 }
 
-.card.bg-warning,
-.card .card-header-warning .card-icon,
-.card .card-header-warning .card-text,
-.card .card-header-warning:not(.card-header-icon):not(.card-header-text),
-.card.card-rotate.bg-warning .back,
-.card.card-rotate.bg-warning .front {
+.card-icon {
   background: linear-gradient(60deg, #ffa726, #fb8c00);
 }
 
@@ -142,7 +139,8 @@ p {
 }
 
 a {
-  color: #9c27b0;
+  font-size: 13px;
+  color: #7c797c;
   text-decoration: none;
   background-color: transparent;
 }
